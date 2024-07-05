@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de Monedas</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Conversor de Monedas</h1>
+        <form id="converter-form">
+            <label for="amount">Monto en pesos chilenos (CLP):</label>
+            <input type="number" id="amount" name="amount" required>
+            <label for="currency">Convertir a:</label>
+            <select id="currency" name="currency">
+                <option value="dolar">Dólar (USD)</option>
+                <option value="euro">Euro (EUR)</option>
+                <option value="uf">Unidad de Fomento (UF)</option>
+                <option value="bitcoin">Bitcoin (BTC)</option>
+                <!-- <option value="yen">Yen Japonés (JPY)</option> -->
+            </select>
+            <button type="submit">Convertir</button>
+        </form>
+        <h2 id="result"></h2>
+        <canvas id="currencyChart" width="400" height="200"></canvas>
+    </div>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
